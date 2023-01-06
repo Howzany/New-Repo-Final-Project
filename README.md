@@ -2,7 +2,10 @@
 
 ## Background
 
-This is the final capstone project for Thinkful. I followed the instructions below to create the web application. Here is the link to the deployed website: 
+This is the final capstone project for Thinkful. I followed the instructions below to create the web application. Here is the link to the deployed website:
+https://thinkful-restaurant-reservation-frontend-mqyz.onrender.com
+
+![Final Capstone Screen Shot](https://user-images.githubusercontent.com/85510537/211074828-253e46b1-0479-4024-bc38-8543a1dda713.PNG)
 
 > You have been hired as a full stack developer at _Periodic Tables_, a startup that is creating a reservation system for fine dining restaurants.
 > The software is used only by restaurant personnel when a customer calls to request a reservation.
@@ -34,6 +37,7 @@ This starter code closely follows the best practices and patterns established in
 The `./back-end` folder contains all the code for the backend project.
 
 The table below describes the existing files in the `./back-end` folder:
+
 
 | Folder/file path                                         | Description                                                                                                         |
 | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
