@@ -43,7 +43,7 @@ function ReservationForm({
           Mobile Number:
           <input
             className="form-control"
-            type="tel"
+            type="text"
             placeholder="XXX-XXX-XXXX"
             // pattern="/^(?([0-9]{3}))?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/"
             pattern="[0-9\-]+"
