@@ -87,6 +87,30 @@ function timeIsValid(req, res, next) {
   }
 }
 
+function mobileNumber(req, res, next) {
+  const { mobile_number } = req.body.data;
+  const isMobileNumber = mobile_number.match(
+    /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
+  );
+  if (isMobileNumber) {
+    res.locals.mobile_number = mobile_number;
+    return next();
+  } else {
+    next({
+      status: 400,
+      message:
+        "mobile_number is not a valid mobile number. Valid formats:" +
+        "(123) 456-7890" +
+        "(123)456-7890" +
+        "123-456-7890" +
+        "123.456.7890" +
+        "1234567890" +
+        "+31636363634" +
+        "075-63546725",
+    });
+  }
+}
+
 function peopleIsNumber(req, res, next) {
   let { people } = req.body.data;
   if (typeof people !== "number" || people < 0) {
@@ -243,6 +267,7 @@ module.exports = {
     dateIsValid,
     timeIsValid,
     peopleIsNumber,
+    mobileNumber,
     notOnTuesday,
     notInPast,
     resDuringOpHrs,
@@ -257,6 +282,7 @@ module.exports = {
     dateIsValid,
     timeIsValid,
     peopleIsNumber,
+    mobileNumber,
     notOnTuesday,
     notInPast,
     resDuringOpHrs,

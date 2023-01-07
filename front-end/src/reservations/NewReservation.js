@@ -58,10 +58,8 @@ function NewReservation() {
         <ErrorAlert error={errorAlert} />
         <ReservationForm
           formData={formData}
-          // value={value}
           changeHandler={changeHandler}
           submitHandler={submitHandler}
-          // handleChange={handleChange}
         />
       </div>
     </div>

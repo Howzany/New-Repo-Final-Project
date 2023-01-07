@@ -3,11 +3,9 @@ import { useHistory } from "react-router-dom";
 
 function ReservationForm({
   formData,
-  // value,
   changeHandler,
   submitHandler,
-  // handleChange,
-}) {
+}){
   const history = useHistory();
 
   return (
