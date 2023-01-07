@@ -27,7 +27,7 @@ function Dashboard() {
   const [tablesError, setTablesError] = useState([]);
   const [cancelError, setCancelError] = useState(null);
 
-  //If date is not given, should preform get request with today's date.
+  //If date is not given, should perform get request with today's date.
   let date = today();
   const query = useQuery().get("date");
   if (query) {
@@ -75,7 +75,6 @@ function Dashboard() {
       try {
         await changeReservationStatus(reservation_id, "cancelled");
       } catch (error) {
-
         setCancelError([error]);
       }
 
