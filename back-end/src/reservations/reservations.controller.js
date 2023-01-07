@@ -99,7 +99,7 @@ function mobileNumber(req, res, next) {
     next({
       status: 400,
       message:
-        "mobile_number is not a valid mobile number. Valid formats:" +
+        "mobile_number is not a valid mobile number. \n Valid formats:" +
         "\n (123) 456-7890" +
         "\n (123)456-7890" +
         "\n 123-456-7890" +
