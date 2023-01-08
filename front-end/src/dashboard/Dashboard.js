@@ -96,7 +96,7 @@ function Dashboard() {
           Previous
         </Link>
         <Link to={`/dashboard`} className="btn btn-light">
-          Today
+          '${date}'
         </Link>
         <Link to={`/dashboard/?date=${next(date)}`} className="btn btn-dark">
           Next
